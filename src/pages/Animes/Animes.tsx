@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AnimeCard from "../../components/AnimeCard/AnimeCard";
 import CardList from "../../components/CardList/CardList";
 import Loader from "../../components/Loader/Loader";
@@ -12,30 +13,14 @@ type AnimeProps = {
 
 function Animes({ title, category }: AnimeProps) {
   const { animes, loading } = useAnimes(category);
-  console.log(animes);
+  const [search, setSearch] = useState('');
+
+  const filteredList = animes.filter((anime)=> anime.name.toLowerCase().startsWith(search.trim()))
   return (
     <div className="animes">
-      <SearchBar />
+      <SearchBar value={search} handleSearch={setSearch} />
       <h1 className="animes_title">{title}</h1>
-      {loading ? (
-        <Loader />
-      ) : (
-        <CardList>
-          {animes.map((anime) => (
-            <AnimeCard
-              key={anime.id}
-              image={anime.image}
-              name={anime.name}
-              genre={anime.genre}
-            >
-              <AnimeCard.Labels>
-                <p>{anime.release_date}</p>
-               {(category === "Home" || category === "Favorites") && <p>{anime.type}</p>}
-              </AnimeCard.Labels>
-            </AnimeCard>
-          ))}
-        </CardList>
-      )}
+      {loading ? <Loader /> : <CardList animes={filteredList} category={category} />}
     </div>
   );
 }
