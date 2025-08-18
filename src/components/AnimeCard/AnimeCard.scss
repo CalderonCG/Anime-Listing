@@ -1,0 +1,44 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.card {
+  width: 10rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  &_image {
+    width: 100%;
+    display: block;
+  }
+
+  &_labels {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 0.8rem;
+      color: v.$grey;
+    }
+  }
+
+  &_genres {
+    display: flex;
+    gap: 0.5rem;
+
+    span{
+      background-color: v.$secondary;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+
+  &_title{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
