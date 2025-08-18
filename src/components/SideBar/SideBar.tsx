@@ -16,11 +16,11 @@ function SideBar() {
           <HiSquares2X2 className="sidebar_navigation_icon" />
         </Link>
         <Link to="series">
-          <RiFilmFill className="sidebar_navigation_icon" />
+          <TbDeviceTvFilled className="sidebar_navigation_icon" />
         </Link>
 
         <Link to="movies">
-          <TbDeviceTvFilled className="sidebar_navigation_icon" />
+          <RiFilmFill className="sidebar_navigation_icon" />
         </Link>
 
         <Link to="favorites">

@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Naruto",
+    "release_date": 2002,
+    "genre": ["Action", "Adventure", "Shounen"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/13/17405.jpg"
+  },
+  {
+    "id": 2,
+    "name": "One Piece",
+    "release_date": 1999,
+    "genre": ["Action", "Adventure", "Comedy"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/6/73245.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Death Note",
+    "release_date": 2006,
+    "genre": ["Suspense", "Mystery", "Psychological"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/9/9453.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Your Name",
+    "release_date": 2016,
+    "genre": ["Romance", "Fantasy", "Drama"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/5/87048.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Spirited Away",
+    "release_date": 2001,
+    "genre": ["Fantasy", "Adventure", "Drama"],
+    "type": "Movie",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/6/79597.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Attack on Titan",
+    "release_date": 2013,
+    "genre": ["Action", "Drama", "Dark Fantasy"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/10/47347.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Akira",
+    "release_date": 1988,
+    "genre": ["Science Fiction", "Action", "Cyberpunk"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/1318/108941.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "release_date": 2009,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Dragon Ball Z",
+    "release_date": 1989,
+    "genre": ["Action", "Adventure", "Martial Arts"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/6/20936.jpg"
+  },
+  {
+    "id": 10,
+    "name": "My Neighbor Totoro",
+    "release_date": 1988,
+    "genre": ["Fantasy", "Family"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/10/75914.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Demon Slayer",
+    "release_date": 2019,
+    "genre": ["Action", "Adventure", "Supernatural"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Howl’s Moving Castle",
+    "release_date": 2004,
+    "genre": ["Fantasy", "Adventure", "Romance"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/5/75810.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Cowboy Bebop",
+    "release_date": 1998,
+    "genre": ["Action", "Space", "Drama"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Princess Mononoke",
+    "release_date": 1997,
+    "genre": ["Fantasy", "Adventure", "Drama"],
+    "type": "Movie",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/7/75919.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Neon Genesis Evangelion",
+    "release_date": 1995,
+    "genre": ["Psychological", "Mecha", "Drama"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Tokyo Ghoul",
+    "release_date": 2014,
+    "genre": ["Action", "Horror", "Supernatural"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/5/64449.jpg"
+  },
+  {
+    "id": 17,
+    "name": "A Silent Voice",
+    "release_date": 2016,
+    "genre": ["Drama", "Romance", "School"],
+    "type": "Movie",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1122/96435.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Sword Art Online",
+    "release_date": 2012,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/11/39717.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Jujutsu Kaisen",
+    "release_date": 2020,
+    "genre": ["Action", "Supernatural", "Shounen"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Paprika",
+    "release_date": 2006,
+    "genre": ["Psychological", "Science Fiction", "Mystery"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/5/7312.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Bleach",
+    "release_date": 2004,
+    "genre": ["Action", "Supernatural", "Shounen"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/3/40451.jpg"
+  },
+  {
+    "id": 22,
+    "name": "The Wind Rises",
+    "release_date": 2013,
+    "genre": ["Drama", "Romance", "Historical"],
+    "type": "Movie",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/10/52309.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Psycho-Pass",
+    "release_date": 2012,
+    "genre": ["Action", "Science Fiction", "Psychological"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/5/43399.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Made in Abyss",
+    "release_date": 2017,
+    "genre": ["Adventure", "Mystery", "Fantasy"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/6/86733.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Perfect Blue",
+    "release_date": 1998,
+    "genre": ["Psychological", "Mystery", "Thriller"],
+    "type": "Movie",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/10/79148.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Frieren: Beyond Journey's End",
+    "release_date": 2023,
+    "genre": ["Adventure", "Fantasy", "Drama"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/1974/137167.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Spy × Family",
+    "release_date": 2022,
+    "genre": ["Action", "Comedy", "Slice of Life"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1745/117247.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Kaguya-sama: Love is War",
+    "release_date": 2019,
+    "genre": ["Romance", "Comedy", "School"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/1331/109222.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Kotaro Lives Alone",
+    "release_date": 2022,
+    "genre": ["Slice of Life", "Comedy", "Drama"],
+    "type": "Series",
+    "bookmarked": false,
+    "image": "https://cdn.myanimelist.net/images/anime/1301/126749.jpg"
+  },
+  {
+    "id": 30,
+    "name": "The Pet Girl of Sakurasou",
+    "release_date": 2012,
+    "genre": ["Romance", "Comedy", "School"],
+    "type": "Series",
+    "bookmarked": true,
+    "image": "https://cdn.myanimelist.net/images/anime/10/75912.jpg"
+  }
+]

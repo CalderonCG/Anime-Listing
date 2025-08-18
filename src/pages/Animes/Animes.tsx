@@ -1,5 +1,6 @@
 import CardList from "../../components/CardList/CardList";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import { useAnimes } from "../../services/AnimeService";
 import "./Animes.scss";
 
 type AnimeProps={
@@ -8,6 +9,8 @@ type AnimeProps={
 }
 
 function Animes({title, category}: AnimeProps) {
+  const {animes, loading} = useAnimes(category)
+  console.log(animes)
   return (
     <div className="animes">
       <SearchBar />
