@@ -19,6 +19,8 @@ type AnimeProps = {
   return (
     <div className="animes">
       <SearchBar value={search} handleSearch={setSearch} />
+      
+      {category === 'Home' && (<RatedList animes={animes}/>)}
       <h1 className="animes_title">{title}</h1>
       {loading ? <Loader /> : <CardList animes={filteredList} category={category} />}
     </div>

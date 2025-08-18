@@ -1,16 +1,48 @@
 @use "../../styles/mixins" as m;
 @use "../../styles/variables" as v;
 
-.rated_card{
-      &_watch {
+
+.rated_card {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+
+
+    h1{
+      font-size: 1.4rem;
+    }
+    &_image{
+        object-fit: cover;
+        width: 30%;
+        height: 100%
+    }
+
+    &_data{
+    display: flex;
+    flex-direction: column;
+    }
+
+  &_watch {
     @include m.button();
     background-color: v.$secondary;
+    
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
     color: white;
   }
 
   &_details {
     @include m.button();
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
     background-color: v.$primary;
     color: white;
+  }
+
+  &_actions{
+    display: flex;
+    gap: 1rem;
   }
 }
