@@ -53,15 +53,7 @@
     "bookmarked": true,
     "image": "https://cdn.myanimelist.net/images/anime/10/47347.jpg"
   },
-  {
-    "id": 7,
-    "name": "Akira",
-    "release_date": 1988,
-    "genre": ["Science Fiction", "Action", "Cyberpunk"],
-    "type": "Movie",
-    "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/1318/108941.jpg"
-  },
+
   {
     "id": 8,
     "name": "Fullmetal Alchemist: Brotherhood",
@@ -177,7 +169,7 @@
     "genre": ["Psychological", "Science Fiction", "Mystery"],
     "type": "Movie",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/5/7312.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/3627l.jpg"
   },
   {
     "id": 21,
@@ -188,15 +180,7 @@
     "bookmarked": true,
     "image": "https://cdn.myanimelist.net/images/anime/3/40451.jpg"
   },
-  {
-    "id": 22,
-    "name": "The Wind Rises",
-    "release_date": 2013,
-    "genre": ["Drama", "Romance", "Historical"],
-    "type": "Movie",
-    "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/10/52309.jpg"
-  },
+
   {
     "id": 23,
     "name": "Psycho-Pass",
@@ -222,7 +206,7 @@
     "genre": ["Psychological", "Mystery", "Thriller"],
     "type": "Movie",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/10/79148.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/7/58303l.jpg"
   },
   {
     "id": 26,
@@ -231,7 +215,7 @@
     "genre": ["Adventure", "Fantasy", "Drama"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/1974/137167.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg"
   },
   {
     "id": 27,
@@ -240,7 +224,7 @@
     "genre": ["Action", "Comedy", "Slice of Life"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1745/117247.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1111/121262l.jpg"
   },
   {
     "id": 28,
@@ -249,24 +233,6 @@
     "genre": ["Romance", "Comedy", "School"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1331/109222.jpg"
-  },
-  {
-    "id": 29,
-    "name": "Kotaro Lives Alone",
-    "release_date": 2022,
-    "genre": ["Slice of Life", "Comedy", "Drama"],
-    "type": "Series",
-    "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/1301/126749.jpg"
-  },
-  {
-    "id": 30,
-    "name": "The Pet Girl of Sakurasou",
-    "release_date": 2012,
-    "genre": ["Romance", "Comedy", "School"],
-    "type": "Series",
-    "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/10/75912.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1291/97023l.jpg"
   }
 ]

@@ -1,29 +1,18 @@
-import AnimeCard from "../AnimeCard/AnimeCard"
-import './CardList.scss'
+import type { AnimeType } from "../../services/AnimeService";
+import AnimeCard from "../AnimeCard/AnimeCard";
+import "./CardList.scss";
 
-function CardList() {
+type ListProps = {
+  children: React.ReactNode;
+};
+
+function CardList({ children }: ListProps) {
   return (
-          <div className="card_list">
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-        <AnimeCard />
-      </div>
-  )
+    <div className="card_list">
+
+      {children}
+    </div>
+  );
 }
 
-export default CardList
+export default CardList;

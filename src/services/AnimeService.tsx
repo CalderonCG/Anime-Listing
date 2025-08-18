@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export type Anime = {
+export type AnimeType = {
   id: number;
   name: string;
   release_date: number;
@@ -12,7 +12,7 @@ export type Anime = {
 
 type Category = "Home" | "Series" | "Movies" | "Favorites";
 
-const getAnimes = async (): Promise<Anime[]> => {
+const getAnimes = async (): Promise<AnimeType[]> => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   const res = await fetch("/data.json");
 
@@ -20,7 +20,7 @@ const getAnimes = async (): Promise<Anime[]> => {
 };
 
 export const useAnimes = (category: Category) => {
-  const [animes, setAnimes] = useState<Anime[]>([]);
+  const [animes, setAnimes] = useState<AnimeType[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export const useAnimes = (category: Category) => {
       try {
         const data = await getAnimes();
 
-        let filteredList: Anime[];
+        let filteredList: AnimeType[];
 
         switch (category) {
           case "Series":
