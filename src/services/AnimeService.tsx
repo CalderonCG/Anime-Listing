@@ -8,6 +8,10 @@ export type AnimeType = {
   type: "Series" | "Movie";
   bookmarked: boolean;
   image: string;
+  episodes: number;
+  duration: number;
+  synopsis: string;
+  rating: number;
 };
 
 type Category = "Home" | "Series" | "Movies" | "Favorites";
@@ -18,6 +22,15 @@ const getAnimes = async (): Promise<AnimeType[]> => {
 
   return res.json();
 };
+
+export const getAnimeById = async (id: number): Promise<AnimeType | undefined> => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  const res = await fetch("/data.json");
+  const data: AnimeType[] = await res.json();
+  const anime = data.find((anime) => anime.id === id); 
+  return anime || undefined
+};
+
 
 export const useAnimes = (category: Category) => {
   const [animes, setAnimes] = useState<AnimeType[]>([]);
@@ -53,7 +66,7 @@ export const useAnimes = (category: Category) => {
     };
 
     fetchData();
-   }, [category]);
+  }, [category]);
 
   return { animes, loading };
 };

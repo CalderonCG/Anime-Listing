@@ -1,0 +1,66 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 1rem;
+
+  &_data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &_image {
+    height: 30rem;
+    padding: 1rem;
+  }
+
+  &_labels {
+    display: flex;
+    gap: 1rem;
+    color: v.$grey;
+
+    span{
+        display: flex;
+        align-items: center;
+        gap: 0.1rem;
+    }
+  }
+
+  &_genres {
+    display: flex;
+    gap: 0.5rem;
+
+    span {
+      background-color: v.$secondary;
+      padding: 0.2rem 0.8rem;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+  &_actions {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &_watch {
+    @include m.button();
+    background-color: v.$secondary;
+    color: white;
+  }
+
+  &_add {
+    @include m.button();
+    background-color: v.$primary;
+    color: white;
+  }
+
+  &_description{
+    width: 50% ;
+    font-size: 1.2rem;
+  }
+}

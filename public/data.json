@@ -6,7 +6,11 @@
     "genre": ["Action", "Adventure", "Shounen"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/13/17405.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/13/17405.jpg",
+    "episodes": 220,
+    "duration": 24,
+    "synopsis": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
+    "rating": 8.2
   },
   {
     "id": 2,
@@ -15,7 +19,11 @@
     "genre": ["Action", "Adventure", "Comedy"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/6/73245.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/73245.jpg",
+    "episodes": 1000,
+    "duration": 24,
+    "synopsis": "Monkey D. Luffy and his pirate crew explore the Grand Line in search of the ultimate treasure, the One Piece, to become the Pirate King.",
+    "rating": 8.8
   },
   {
     "id": 3,
@@ -24,7 +32,11 @@
     "genre": ["Suspense", "Mystery", "Psychological"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/9/9453.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+    "episodes": 37,
+    "duration": 24,
+    "synopsis": "Light Yagami finds a supernatural notebook that allows him to kill anyone by writing the victim's name. He begins a secret crusade to rid the world of criminals.",
+    "rating": 9.0
   },
   {
     "id": 4,
@@ -33,7 +45,11 @@
     "genre": ["Romance", "Fantasy", "Drama"],
     "type": "Movie",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/5/87048.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/5/87048.jpg",
+    "episodes": 1,
+    "duration": 106,
+    "synopsis": "Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.",
+    "rating": 9.1
   },
   {
     "id": 5,
@@ -42,7 +58,11 @@
     "genre": ["Fantasy", "Adventure", "Drama"],
     "type": "Movie",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/6/79597.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/79597.jpg",
+    "episodes": 1,
+    "duration": 125,
+    "synopsis": "In this animated feature by Hayao Miyazaki, 10-year-old Chihiro and her parents stumble upon a seemingly abandoned amusement park. After her parents are turned into giant pigs, Chihiro meets the mysterious Haku, who explains that the park is a resort for supernatural beings who need a break from their time spent in the earthly realm, and that she must work there to free herself and her parents.",
+    "rating": 9.3
   },
   {
     "id": 6,
@@ -51,9 +71,12 @@
     "genre": ["Action", "Drama", "Dark Fantasy"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/10/47347.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+    "episodes": 75,
+    "duration": 24,
+    "synopsis": "After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",
+    "rating": 9.1
   },
-
   {
     "id": 8,
     "name": "Fullmetal Alchemist: Brotherhood",
@@ -61,7 +84,11 @@
     "genre": ["Action", "Adventure", "Fantasy"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+    "episodes": 64,
+    "duration": 24,
+    "synopsis": "After a failed alchemical experiment leaves them with damaged bodies, brothers Edward and Alphonse Elric search for the Philosopher's Stone to restore their bodies.",
+    "rating": 9.2
   },
   {
     "id": 9,
@@ -70,7 +97,11 @@
     "genre": ["Action", "Adventure", "Martial Arts"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/6/20936.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/20936.jpg",
+    "episodes": 291,
+    "duration": 24,
+    "synopsis": "The adventures of Earth's martial arts defender, Goku, continue with a new family and the revelation of his alien origins. Now Goku and his allies must defend the planet from an onslaught of new extraterrestrial enemies.",
+    "rating": 8.5
   },
   {
     "id": 10,
@@ -79,7 +110,11 @@
     "genre": ["Fantasy", "Family"],
     "type": "Movie",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/10/75914.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/10/75914.jpg",
+    "episodes": 1,
+    "duration": 86,
+    "synopsis": "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
+    "rating": 8.8
   },
   {
     "id": 11,
@@ -88,16 +123,24 @@
     "genre": ["Action", "Adventure", "Supernatural"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+    "episodes": 44,
+    "duration": 24,
+    "synopsis": "After his family is slaughtered by demons, Tanjiro Kamado joins the Demon Slayer Corps to turn his younger sister Nezuko back into a human and avenge his family.",
+    "rating": 8.7
   },
   {
     "id": 12,
-    "name": "Howl’s Moving Castle",
+    "name": "Howl's Moving Castle",
     "release_date": 2004,
     "genre": ["Fantasy", "Adventure", "Romance"],
     "type": "Movie",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/5/75810.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/5/75810.jpg",
+    "episodes": 1,
+    "duration": 119,
+    "synopsis": "When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.",
+    "rating": 9.0
   },
   {
     "id": 13,
@@ -106,7 +149,11 @@
     "genre": ["Action", "Space", "Drama"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
+    "episodes": 26,
+    "duration": 24,
+    "synopsis": "The futuristic misadventures and tragedies of an easygoing bounty hunter and his partners.",
+    "rating": 8.9
   },
   {
     "id": 14,
@@ -115,7 +162,11 @@
     "genre": ["Fantasy", "Adventure", "Drama"],
     "type": "Movie",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/7/75919.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/7/75919.jpg",
+    "episodes": 1,
+    "duration": 134,
+    "synopsis": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
+    "rating": 9.1
   },
   {
     "id": 15,
@@ -124,7 +175,11 @@
     "genre": ["Psychological", "Mecha", "Drama"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg",
+    "episodes": 26,
+    "duration": 24,
+    "synopsis": "In the year 2015, the world stands on the brink of destruction. Mankind's last hope lies in the hands of Nerv, a special agency under the United Nations, and their Evangelions, giant machines capable of defeating the Angels who herald Earth's ruin.",
+    "rating": 8.7
   },
   {
     "id": 16,
@@ -133,7 +188,11 @@
     "genre": ["Action", "Horror", "Supernatural"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/5/64449.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/5/64449.jpg",
+    "episodes": 12,
+    "duration": 24,
+    "synopsis": "Ken Kaneki is a bookworm college student who meets a girl named Rize at a cafe he frequents. He's unaware that his date will transform his life into a living nightmare.",
+    "rating": 7.8
   },
   {
     "id": 17,
@@ -142,7 +201,11 @@
     "genre": ["Drama", "Romance", "School"],
     "type": "Movie",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1122/96435.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
+    "episodes": 1,
+    "duration": 130,
+    "synopsis": "A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.",
+    "rating": 9.0
   },
   {
     "id": 18,
@@ -151,7 +214,11 @@
     "genre": ["Action", "Adventure", "Fantasy"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/11/39717.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/11/39717.jpg",
+    "episodes": 25,
+    "duration": 24,
+    "synopsis": "In the near future, a Virtual Reality Massive Multiplayer Online Role-Playing Game (VRMMORPG) called Sword Art Online has been released where players control their avatars with their bodies using a piece of technology called Nerve Gear. One day, players discover they cannot log out, as the game creator is holding them captive unless they reach the 100th floor of the game's tower and defeat the final boss.",
+    "rating": 7.8
   },
   {
     "id": 19,
@@ -160,7 +227,11 @@
     "genre": ["Action", "Supernatural", "Shounen"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+    "episodes": 24,
+    "duration": 24,
+    "synopsis": "Yuuji Itadori, a kind-hearted teenager, joins his school's Occult Club for fun, but discovers that its members are actual sorcerers who can manipulate the energy between beings for their own use. He hears about a cursed talisman - the finger of Sukuna, a demon - and its being targeted by other cursed beings.",
+    "rating": 8.7
   },
   {
     "id": 20,
@@ -169,7 +240,11 @@
     "genre": ["Psychological", "Science Fiction", "Mystery"],
     "type": "Movie",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/6/3627l.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/3627l.jpg",
+    "episodes": 1,
+    "duration": 90,
+    "synopsis": "When a machine that allows therapists to enter their patients' dreams is stolen, all hell breaks loose. Only a young female therapist can stop it: Paprika.",
+    "rating": 8.5
   },
   {
     "id": 21,
@@ -178,9 +253,12 @@
     "genre": ["Action", "Supernatural", "Shounen"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/3/40451.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/3/40451.jpg",
+    "episodes": 366,
+    "duration": 24,
+    "synopsis": "Ichigo Kurosaki is an ordinary high schooler—until his family is attacked by a Hollow, a corrupt spirit that seeks to devour human souls. It is then that he meets a Soul Reaper named Rukia Kuchiki, who gets injured while protecting Ichigo's family from the assailant.",
+    "rating": 8.2
   },
-
   {
     "id": 23,
     "name": "Psycho-Pass",
@@ -188,7 +266,11 @@
     "genre": ["Action", "Science Fiction", "Psychological"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/5/43399.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/5/43399.jpg",
+    "episodes": 22,
+    "duration": 24,
+    "synopsis": "In a dystopian future, omnipresent public sensors continuously scan the mental states of every passing citizen. The Sibyl System uses these 'Psycho-Pass' readings to assess each individual's propensity to commit crimes, with inspectors enforcing the law based on these assessments.",
+    "rating": 8.4
   },
   {
     "id": 24,
@@ -197,7 +279,11 @@
     "genre": ["Adventure", "Mystery", "Fantasy"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/6/86733.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/6/86733.jpg",
+    "episodes": 13,
+    "duration": 24,
+    "synopsis": "The Abyss is the only unexplored place in the world. Strange and wonderful creatures reside in its depths, and it is full of precious relics that current humans are unable to make. The mysteries of the Abyss fascinate humans, and they descend one after another. Those who descend into the Abyss are known as Cave Raiders.",
+    "rating": 8.7
   },
   {
     "id": 25,
@@ -206,7 +292,11 @@
     "genre": ["Psychological", "Mystery", "Thriller"],
     "type": "Movie",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/7/58303l.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/7/58303l.jpg",
+    "episodes": 1,
+    "duration": 81,
+    "synopsis": "A pop singer gives up her career to become an actress, but she slowly goes insane when she starts being stalked by an obsessed fan and seemingly a ghost of her past.",
+    "rating": 8.6
   },
   {
     "id": 26,
@@ -215,7 +305,11 @@
     "genre": ["Adventure", "Fantasy", "Drama"],
     "type": "Series",
     "bookmarked": false,
-    "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1015/138006l.jpg",
+    "episodes": 28,
+    "duration": 24,
+    "synopsis": "The elf mage Frieren was part of the hero's party that defeated the Demon King. After the battle, she continues her solitary journey to collect spells, reflecting on how differently she perceives time compared to her human companions.",
+    "rating": 9.2
   },
   {
     "id": 27,
@@ -224,7 +318,11 @@
     "genre": ["Action", "Comedy", "Slice of Life"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1111/121262l.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1111/121262l.jpg",
+    "episodes": 25,
+    "duration": 24,
+    "synopsis": "A spy on an undercover mission gets married and adopts a child as part of his cover. His wife is a deadly assassin, and his daughter is a telepath! None knows the others' true identity, but they must pretend to be a loving family.",
+    "rating": 8.8
   },
   {
     "id": 28,
@@ -233,6 +331,10 @@
     "genre": ["Romance", "Comedy", "School"],
     "type": "Series",
     "bookmarked": true,
-    "image": "https://cdn.myanimelist.net/images/anime/1291/97023l.jpg"
+    "image": "https://cdn.myanimelist.net/images/anime/1291/97023l.jpg",
+    "episodes": 37,
+    "duration": 24,
+    "synopsis": "The elite members of Shuchiin Academy's student council, Kaguya Shinomiya and Miyuki Shirogane, appear to be the perfect couple. But in reality, they're engaged in a daily battle to make the other confess their love first!",
+    "rating": 8.7
   }
 ]

@@ -1,33 +1,33 @@
 import React from "react";
 import "./AnimeCard.scss";
+import { Link } from "react-router-dom";
 
 type AnimeCardProps = {
+  id: number
   image: string;
   name: string;
   genre: string[];
   children?: React.ReactNode;
 };
 
-function AnimeCard({ image, name, genre, children }: AnimeCardProps) {
+function AnimeCard({ id,image, name, genre, children }: AnimeCardProps) {
   return (
-    <div className="card">
+    <Link to={`/details/${id}`} className="card">
       <img className="card_image" src={image} alt={name} />
 
       {children}
 
       <div className="card_genres">
-        {genre.slice(0, 2).map((g) => (
-          <span key={g}>{g}</span>
+        {genre.slice(0, 2).map((genre) => (
+          <span key={genre}>{genre}</span>
         ))}
 
         {genre.length > 2 && (
           <div className="more_genres_container">
-            <span className="more_genres_trigger">
-              +{genre.length - 2}
-            </span>
+            <span className="more_genres_trigger">+{genre.length - 2}</span>
             <div className="more_genres_list">
-              {genre.slice(2).map((g) => (
-                <span key={g}>{g}</span>
+              {genre.slice(2).map((genre) => (
+                <span key={genre}>{genre}</span>
               ))}
             </div>
           </div>
@@ -35,7 +35,7 @@ function AnimeCard({ image, name, genre, children }: AnimeCardProps) {
       </div>
 
       <p className="card_title">{name}</p>
-    </div>
+    </Link>
   );
 }
 

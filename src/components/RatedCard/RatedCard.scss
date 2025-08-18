@@ -1,0 +1,16 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.rated_card{
+      &_watch {
+    @include m.button();
+    background-color: v.$secondary;
+    color: white;
+  }
+
+  &_details {
+    @include m.button();
+    background-color: v.$primary;
+    color: white;
+  }
+}

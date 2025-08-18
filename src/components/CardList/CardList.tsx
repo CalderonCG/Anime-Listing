@@ -12,6 +12,7 @@ function CardList({ animes, category }: AnimeListProps) {
     <div className="card_list">
       {animes.map((anime) => (
         <AnimeCard
+          id={anime.id}
           key={anime.id}
           image={anime.image}
           name={anime.name}
@@ -19,7 +20,9 @@ function CardList({ animes, category }: AnimeListProps) {
         >
           <AnimeCard.Labels>
             <p>{anime.release_date}</p>
-            {(category === "Home" || category === "Favorites") && <p>{anime.type}</p>}
+            {(category === "Home" || category === "Favorites") && (
+              <p>{anime.type}</p>
+            )}
           </AnimeCard.Labels>
         </AnimeCard>
       ))}

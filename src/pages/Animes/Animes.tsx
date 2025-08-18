@@ -1,17 +1,17 @@
 import { useState } from "react";
-import AnimeCard from "../../components/AnimeCard/AnimeCard";
 import CardList from "../../components/CardList/CardList";
 import Loader from "../../components/Loader/Loader";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { useAnimes } from "../../services/AnimeService";
 import "./Animes.scss";
+import RatedList from "../../components/RatedList/RatedList";
 
 type AnimeProps = {
   title: string;
   category: "Home" | "Series" | "Movies" | "Favorites";
 };
 
-function Animes({ title, category }: AnimeProps) {
+  function Animes({ title, category }: AnimeProps) {
   const { animes, loading } = useAnimes(category);
   const [search, setSearch] = useState('');
 

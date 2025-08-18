@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import SideBar from "./components/SideBar/SideBar";
 import Animes from "./pages/Animes/Animes";
+import Details from "./pages/Details/Details";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/series" element={<Animes title="Anime TV series" category="Series"/>} />
         <Route path="/movies" element={<Animes title="Anime movies" category="Movies"/>} />
         <Route path="/favorites" element={<Animes title="My favorite anime" category="Favorites"/>} />
+        
+        <Route path="/details/:id" element={<Details/>} />
       </Routes>
     </div>
   );
