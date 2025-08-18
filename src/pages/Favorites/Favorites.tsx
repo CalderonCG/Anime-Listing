@@ -1,16 +1,15 @@
-
 import CardList from "../../components/CardList/CardList";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import "./Home.scss";
+import "./Favorites.scss";
 
-function Home() {
+function Favorites() {
   return (
-    <div className="home">
+    <div className="favorites">
       <SearchBar />
-      <h1 className="home_title">Explore</h1>
+      <h1 className="favorites_title">My favorite anime</h1>
       <CardList/>
     </div>
   );
 }
 
-export default Home;
+export default Favorites;

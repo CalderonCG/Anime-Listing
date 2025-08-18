@@ -1,16 +1,15 @@
-
 import CardList from "../../components/CardList/CardList";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import "./Home.scss";
+import "./Movies.scss";
 
-function Home() {
+function Movies() {
   return (
-    <div className="home">
+    <div className="movies">
       <SearchBar />
-      <h1 className="home_title">Explore</h1>
+      <h1 className="movies_title">Anime movies</h1>
       <CardList/>
     </div>
   );
 }
 
-export default Home;
+export default Movies;

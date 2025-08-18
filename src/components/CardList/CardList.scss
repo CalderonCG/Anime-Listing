@@ -1,0 +1,12 @@
+@use "../../styles/variables" as v;
+.card_list {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  box-sizing: border-box;
+  overflow-y: auto;
+  scrollbar-color: v.$primary v.$background-dark;
+  scrollbar-width: thin;
+}
