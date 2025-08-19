@@ -1,0 +1,19 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.filter {
+  padding: 0.25rem 1rem;
+  border: 1px solid v.$grey;
+  border-radius: 0.5rem;
+  background-color: inherit;
+  color: white;
+
+  &:hover {
+    border: 1px solid v.$secondary;
+  }
+}
+
+.active{
+    border: 1px solid v.$secondary;
+    background-color: v.$secondary;
+}

@@ -20,7 +20,15 @@
         padding: 0.5rem 0;
         font-size: 1.4rem;
     }
+
+    &_controls{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
+
 
 .card_list {
   flex: 1 1 auto;

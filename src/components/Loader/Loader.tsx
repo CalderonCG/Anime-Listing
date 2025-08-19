@@ -6,6 +6,7 @@ function Loader() {
     <div className="loader">
       <MoonLoader
         size={50}
+        color="#fe4648"
         aria-label="Loading Spinner"
         data-testid="loader"
       />
