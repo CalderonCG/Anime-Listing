@@ -39,6 +39,7 @@ export const useAnimes = (category: Category) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true)
         const data = await getAnimes();
 
         let filteredList: AnimeType[];

@@ -13,11 +13,11 @@
     color: white;
   }
 
+
   &_menu {
     position: absolute;
     top: 100%;      
     display: flex;
-    flex-wrap: wrap;
     gap: 0.5rem;
     right: 0;       
     width: 50vw;    
@@ -26,6 +26,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin-top: 0.5rem;
+    flex-direction: column;
     z-index: 1000;
   }
 }

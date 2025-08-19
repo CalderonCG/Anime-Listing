@@ -1,5 +1,4 @@
 @use '../../styles/mixins' as m;
-
 @use "../../styles/variables" as v;
 
 .animes{
@@ -19,6 +18,7 @@
         display: flex;
         justify-content: space-between;
     } 
+
 }
 
 .card_list {
@@ -32,3 +32,10 @@
   scrollbar-color: v.$primary v.$background-dark;
   scrollbar-width: thin;
 }
+
+
+    .genres_list{
+display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    }
