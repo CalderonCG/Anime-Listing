@@ -14,6 +14,11 @@
     &_title{
         flex: 0 0 auto
     }
+        &_controls{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    } 
 }
 
 .card_list {

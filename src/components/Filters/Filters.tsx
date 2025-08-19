@@ -1,32 +1,17 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import "./Filter.scss";
 import FilterCard from "../FilterCard/FilterCard";
-function Filters() {
+
+type FiltersProp ={
+    children: ReactNode
+}
+
+function Filters({children}: FiltersProp) {
   const [showMenu, setShowMenu] = useState(false);
 
-  const genres = [
-    "Action",
-    "Adventure",
-    "Shounen",
-    "Comedy",
-    "Suspense",
-    "Mystery",
-    "Psychological",
-    "Romance",
-    "Fantasy",
-    "Drama",
-    "Dark Fantasy",
-    "Martial Arts",
-    "Family",
-    "Supernatural",
-    "Space",
-    "School",
-    "Mecha",
-    "Horror",
-    "Sci-fi",
-    "Thriller",
-    "Slice of Life",
-  ];
+
+
+
 
   return (
     <div className="filters">
@@ -36,8 +21,8 @@ function Filters() {
 
       {showMenu && (
         <div className="filters_menu">
-            {genres.map((genre) => <FilterCard genre={genre}/>)}
-      
+            {children}
+
         </div>
       )}
     </div>

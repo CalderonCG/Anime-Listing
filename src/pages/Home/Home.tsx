@@ -5,13 +5,14 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import { useAnimes } from "../../services/AnimeService";
 import "./Home.scss";
 import RatedList from "../../components/RatedList/RatedList";
-import Filters from "../../components/Filters/Filters";
 
 function Home() {
   const { animes, loading } = useAnimes("Home");
   const [search, setSearch] = useState("");
 
+
   const highestRated = animes.sort((a, b) => b.rating - a.rating);
+
 
   //Buscador
   const filteredList = highestRated
@@ -21,7 +22,6 @@ function Home() {
     <div className="home">
       <div className="home_controls">
         <SearchBar value={search} handleSearch={setSearch} />
-        <Filters />
       </div>
 
       <h1 className="home_title">Top rated anime</h1>
