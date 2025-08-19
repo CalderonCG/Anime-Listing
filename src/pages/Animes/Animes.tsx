@@ -4,7 +4,6 @@ import Loader from "../../components/Loader/Loader";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { useAnimes } from "../../services/AnimeService";
 import "./Animes.scss";
-import RatedList from "../../components/RatedList/RatedList";
 
 type AnimeProps = {
   title: string;
@@ -20,7 +19,6 @@ type AnimeProps = {
     <div className="animes">
       <SearchBar value={search} handleSearch={setSearch} />
       
-      {category === 'Home' && (<RatedList animes={animes}/>)}
       <h1 className="animes_title">{title}</h1>
       {loading ? <Loader /> : <CardList animes={filteredList} category={category} />}
     </div>

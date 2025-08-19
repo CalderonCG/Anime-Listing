@@ -1,6 +1,7 @@
 // src/components/AnimeList/AnimeList.tsx
 import AnimeCard from "../AnimeCard/AnimeCard";
 import { type AnimeType } from "../../services/AnimeService";
+import "./CardList.scss";
 
 type AnimeListProps = {
   animes: AnimeType[];
@@ -9,7 +10,7 @@ type AnimeListProps = {
 
 function CardList({ animes, category }: AnimeListProps) {
   return (
-    <div className="card_list">
+    <div className={`${category === "Home" ? "card_row" : "card_list"}`}>
       {animes.map((anime) => (
         <AnimeCard
           id={anime.id}
@@ -19,10 +20,8 @@ function CardList({ animes, category }: AnimeListProps) {
           genre={anime.genre}
         >
           <AnimeCard.Labels>
-            <p>{anime.release_date}</p>
-            {(category === "Home" || category === "Favorites") && (
-              <p>{anime.type}</p>
-            )}
+            {category !== "Home" && <p>{anime.release_date}</p>}
+            {category === "Favorites" && <p>{anime.type}</p>}
           </AnimeCard.Labels>
         </AnimeCard>
       ))}

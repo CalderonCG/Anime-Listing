@@ -10,3 +10,15 @@
   scrollbar-color: v.$primary v.$background-dark;
   scrollbar-width: thin;
 }
+
+.card_row {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 1rem;
+  padding: 0 0.2rem;
+  
+  scrollbar-color: v.$primary v.$background-dark;
+  scrollbar-width: thin;
+}

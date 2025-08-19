@@ -7,13 +7,11 @@ type RatedProps={
 
 
 function RatedList({animes}: RatedProps) {
-  const highestRated= animes.sort((a, b) => b.rating - a.rating);
-  console.log(highestRated)
   return (
 
     
     <div className="rated_list">
-      {highestRated.slice(0,3).map((anime)=>
+      {animes.slice(0,3).map((anime)=>
       
         <RatedCard key={anime.id} id={anime.id} name={anime.name}
         synopsys={anime.synopsis} image={anime.image}
