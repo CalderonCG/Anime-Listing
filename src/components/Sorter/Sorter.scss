@@ -1,7 +1,7 @@
 @use "../../styles/mixins" as m;
 @use "../../styles/variables" as v;
 
-.filters {
+.sorter {
     position: relative;
 
 
@@ -22,7 +22,7 @@
     display: flex;
     gap: 0.5rem;
     right: 0;       
-    width: 50vw;    
+    width: 8rem;    
     background: v.$background-light;
     color: white;
     padding: 1rem;
@@ -30,5 +30,17 @@
     margin-top: 0.5rem;
     flex-direction: column;
     z-index: 1000;
+
+    button{
+      border: none;
+      background-color: inherit;
+      color: white;
+      padding: 0.2rem 0;
+      border-radius: 0.25rem;
+
+      &:hover{
+        background-color: v.$primary;
+      }
+    }
   }
 }

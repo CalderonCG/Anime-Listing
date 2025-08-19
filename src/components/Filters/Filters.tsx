@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, type ReactNode } from "react";
 import "./Filter.scss";
+import { FaFilter } from "react-icons/fa";
 
 type FiltersProp = {
   children: ReactNode;
@@ -29,7 +30,8 @@ function Filters({ children }: FiltersProp) {
         className="filters_button"
         onClick={() => setShowMenu(!showMenu)}
       >
-        Filters
+        <FaFilter/>
+        <p>Filters</p>
       </button>
 
       {showMenu && <div className="filters_menu">{children}</div>}

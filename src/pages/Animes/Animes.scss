@@ -1,24 +1,28 @@
-@use '../../styles/mixins' as m;
+@use "../../styles/mixins" as m;
 @use "../../styles/variables" as v;
 
-.animes{
-    width: 100%;
-    min-height: 100%;
-    height: 100%;
-    @include m.flexCenter(column,start);
-    align-items: start;
-    padding: 1rem;
-    flex: 1 1 auto;
-    
-    &_title{
-        flex: 0 0 auto
-    }
-        &_controls{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    } 
+.animes {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  @include m.flexCenter(column, start);
+  align-items: start;
+  padding: 1rem;
+  flex: 1 1 auto;
 
+  &_title {
+    flex: 0 0 auto;
+  }
+  &_controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &_buttons {
+      display: flex;
+      gap: 1rem;
+    }
+  }
 }
 
 .card_list {
@@ -33,9 +37,8 @@
   scrollbar-width: thin;
 }
 
-
-    .genres_list{
-display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    }
+.genres_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

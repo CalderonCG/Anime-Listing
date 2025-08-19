@@ -8,6 +8,7 @@ import Filters from "../../components/Filters/Filters";
 import FilterCard from "../../components/FilterCard/FilterCard";
 import RatingFilter from "../../components/RatingFilter/RatingFilter";
 import YearFilter from "../../components/YearFilter/YearFilter";
+import Sorter from "../../components/Sorter/Sorter";
 
 type AnimeProps = {
   title: string;
@@ -54,7 +55,8 @@ function Animes({ title, category }: AnimeProps) {
   ];
   const { animes, loading } = useAnimes(category);
   const [search, setSearch] = useState("");
-
+  const [sorting, setSorting] = useState<"Newer" | "Older" | "Rating">("Newer");
+  console.log(sorting)
 
   const handleSelected = ({ key, value }: HandleFilterProps) => {
     if (key === "genres" && typeof value === "string") {
@@ -71,23 +73,41 @@ function Animes({ title, category }: AnimeProps) {
     }
   };
   const filteredList = animes.filter((anime) => {
-    // Filtrar por géneros
+    // Filtro de genero
     const matchesGenres =
       filters.genres.length === 0 ||
-      filters.genres.every((g) => anime.genre.includes(g));
+      filters.genres.every((genre) => anime.genre.includes(genre));
 
-    // Filtrar por año
-    const matchesYear = !filters.year || anime.release_date >= filters.year;
+    // Filtro de año
+    const matchesYear = anime.release_date >= filters.year;
 
-    // Filtrar por rating
-    const matchesRating = !filters.rating || anime.rating >= filters.rating;
+    // Filtro de rating
+    const matchesRating = anime.rating >= filters.rating;
 
+    
+
+    //Filtros juntos
     return matchesGenres && matchesYear && matchesRating;
   });
+
 
   const searchedList = filteredList.filter((anime) =>
     anime.name.toLowerCase().startsWith(search.trim())
   );
+
+  // Orden dependiendo del estado sorting
+const sortedList = [...searchedList].sort((a, b) => {
+  if (sorting === "Newer") {
+    return b.release_date - a.release_date; 
+  }
+  if (sorting === "Older") {
+    return a.release_date - b.release_date; 
+  }
+  if (sorting === "Rating") {
+    return b.rating - a.rating; 
+  }
+  return 0;
+});
 
   useEffect(() => {
     setFilters({
@@ -95,33 +115,40 @@ function Animes({ title, category }: AnimeProps) {
       rating: 0,
       genres: [],
     });
+    setSorting('Newer')
   }, [category]);
   return (
     <div className="animes">
       <div className="animes_controls">
         <SearchBar value={search} handleSearch={setSearch} />
-        <Filters>
-          <RatingFilter value={filters.rating} handleFilter={handleSelected} />
+        <div className="animes_controls_buttons">
+          <Sorter handleSelection={setSorting} />
+          <Filters>
+            <RatingFilter
+              value={filters.rating}
+              handleFilter={handleSelected}
+            />
 
-          <YearFilter value={filters.year} handleFilter={handleSelected} />
+            <YearFilter value={filters.year} handleFilter={handleSelected} />
 
-          <div className="genres_list">
-            {genres.map((genre) => (
-              <FilterCard
-                genre={genre}
-                active={filters.genres.includes(genre)}
-                handleSelected={handleSelected}
-              />
-            ))}
-          </div>
-        </Filters>
+            <div className="genres_list">
+              {genres.map((genre) => (
+                <FilterCard
+                  genre={genre}
+                  active={filters.genres.includes(genre)}
+                  handleSelected={handleSelected}
+                />
+              ))}
+            </div>
+          </Filters>
+        </div>
       </div>
 
       <h1 className="animes_title">{title}</h1>
       {loading ? (
         <Loader />
       ) : (
-        <CardList animes={searchedList} category={category} />
+        <CardList animes={sortedList} category={category} />
       )}
     </div>
   );
