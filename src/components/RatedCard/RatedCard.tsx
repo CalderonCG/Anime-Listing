@@ -2,6 +2,7 @@ import { FaPlay } from "react-icons/fa";
 import "./RatedCard.scss";
 import { Link } from "react-router-dom";
 
+// Types -----------------------------
 type RatedCardProp = {
   id: number;
   name: string;
@@ -9,6 +10,7 @@ type RatedCardProp = {
   image: string;
 };
 
+// Component -------------------------------------------------------
 function RatedCard({ id, name, synopsys, image }: RatedCardProp) {
   return (
     <div className="rated_card">

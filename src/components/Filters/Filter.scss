@@ -13,6 +13,11 @@
     color: white;
     align-items: center;
     gap: 0.5rem;
+
+    
+    &:hover{
+      background-color: v.$background-light;
+    }
   }
 
 

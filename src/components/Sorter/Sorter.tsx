@@ -2,15 +2,17 @@ import { useState, useRef, useEffect} from "react";
 import "./Sorter.scss";
 import { FaSort } from "react-icons/fa";
 
+// Types -----------------------------------------
 type SorterProps={
     handleSelection : React.Dispatch<React.SetStateAction<"Newer" | "Older" | "Rating">>,
 }
 
+//Components---------------------------------------------
 function Sorter({handleSelection} : SorterProps) {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
-  // Useref para cerrar el menu
+  // Useref that controls when the user clicks outside of the menu
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -24,6 +26,7 @@ function Sorter({handleSelection} : SorterProps) {
     };
   }, []);
 
+  //Function that updates the sorting option and closes the menu
   const handleOnClick= (value: 'Newer'|'Older'|'Rating') => {
     handleSelection(value)
     setShowMenu(false)

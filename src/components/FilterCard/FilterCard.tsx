@@ -1,17 +1,21 @@
 import "./FilterCard.scss";
 
-
+//Types------------------------------------------------------
+//This HandleFilterProps is used in the 3 filter components, but I'm not sure if it's worth making an export for it when
+//it is this short and it would be the only exported type for the filters
 type HandleFilterProps = {key: 'year'|'rating' , value:number} | {key: 'genres', value: string}
 type FilterProps = {
   genre: string;
   active: boolean;
-  handleSelected: ({ key, value }: HandleFilterProps) => void
+  handleFilter: ({ key, value }: HandleFilterProps) => void
 };
 
-function FilterCard({ genre, active, handleSelected }: FilterProps) {
+
+//Component-------------------------------------------
+function FilterCard({ genre, active, handleFilter }: FilterProps) {
   return (
     <button className={`filter ${active ? "active" : ""}` }
-    onClick={()=>handleSelected({key: 'genres',value: genre})}
+    onClick={()=>handleFilter({key: 'genres',value: genre})}
     >{genre}</button>
   );
 }

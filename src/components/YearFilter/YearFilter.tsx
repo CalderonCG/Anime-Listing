@@ -1,6 +1,6 @@
 import './YearFilter.scss'
 
-
+//Types------------------------------------------------------
 
 type HandleFilterProps = {key: 'year'|'rating' , value:number} | {key: 'genres', value: string}
 type YearProps={
@@ -8,6 +8,9 @@ type YearProps={
     handleFilter: ({ key, value }: HandleFilterProps) => void
 }
 
+
+
+//Component-------------------------------------------
 function YearFilter({value, handleFilter}:YearProps) {
   return (
     <div className='rating_filter'>

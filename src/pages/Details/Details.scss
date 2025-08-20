@@ -6,9 +6,12 @@
   height: 100%;
   display: flex;
   padding: 1rem;
+  justify-content: center;
+  align-items: center;
 
   &_data {
     display: flex;
+    
     flex-direction: column;
     gap: 1.2rem;
   }
@@ -51,12 +54,22 @@
     @include m.button();
     background-color: v.$secondary;
     color: white;
+    align-items: center;
+    &:hover{
+      background-color: v.$secondary-dark
+    }
   }
 
   &_add {
     @include m.button();
     background-color: v.$primary;
     color: white;
+
+    
+    align-items: center;
+    &:hover{
+      background-color: v.$background-light
+    }
   }
 
   &_description{
