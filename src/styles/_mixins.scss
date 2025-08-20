@@ -4,3 +4,13 @@
     justify-content: $position;
     align-items: center;
 }
+
+@mixin button{
+        padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    gap: 1rem;
+}

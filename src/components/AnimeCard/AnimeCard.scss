@@ -1,0 +1,87 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.card {
+  width: 10rem;
+  min-width: 10rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    background-color: v.$background-light;
+  }
+
+  &_image {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    display: block;
+  }
+
+  &_labels {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 0.8rem;
+      color: v.$grey;
+    }
+  }
+
+  &_genres {
+    display: flex;
+    gap: 0.5rem;
+
+    span {
+      background-color: v.$secondary;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.7rem;
+      border-radius: 0.25rem;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+.card_genres {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+
+  .more_genres_container {
+    position: relative;
+    cursor: pointer;
+
+    .more_genres_list {
+      position: absolute;
+      top: 100%; // Debajo del +X
+      right: 0;
+      background-color: #222;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      display: flex;
+      gap: 0.2rem;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none; // Evita que interfiera con hover
+      transition: opacity 0.2s ease;
+      z-index: 10;
+    }
+
+    &:hover .more_genres_list {
+      opacity: 1;
+      pointer-events: auto; // Ahora sí se puede interactuar
+    }
+  }
+}

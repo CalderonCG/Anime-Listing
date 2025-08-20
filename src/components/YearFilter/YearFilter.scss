@@ -1,0 +1,17 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.year_filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &_input {
+    width: 15%;
+    border: 1px solid ;
+    padding: 0.5rem;
+
+    color: white;
+    background: inherit;
+    border-radius: 0.5rem;
+  }
+}

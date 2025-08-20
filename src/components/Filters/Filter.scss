@@ -1,0 +1,39 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.filters {
+    position: relative;
+
+
+  &_button {
+    @include m.button();
+    background-color: v.$primary;
+    padding: 0.2rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    gap: 0.5rem;
+
+    
+    &:hover{
+      background-color: v.$background-light;
+    }
+  }
+
+
+  &_menu {
+    position: absolute;
+    top: 100%;      
+    display: flex;
+    gap: 0.5rem;
+    right: 0;       
+    width: 50vw;    
+    background: v.$background-light;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    z-index: 1000;
+  }
+}
